@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h2{
+    font-family: 'Anton', sans-serif;
+    margin-left: 12vw;
+}
+
+.sign-in-form{
+    height: auto;
+    width: 30vw;
+    margin:0 auto ;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.input-field{
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: block;
+    margin:10px;
+    margin-left: 6vw;
+    width: 18vw;
+}
+
+.sign-in-button{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:10px ;
+    padding: 4px;
+    background-color: white;
+    text-align: center;
+    margin-left: 13vw;
+}
+
+.google-button{
+    background-color: white;
+    margin-left: 9vw;
+    border-radius: 20px;
+}
+
+.google-text{
+    position: relative;
+    top: -15px;
+}
