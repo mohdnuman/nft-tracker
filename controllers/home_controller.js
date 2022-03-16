@@ -19,12 +19,13 @@ module.exports.home = async function (req, res) {
 };
 
 module.exports.red = async function (req, res) {
-  try {
-    if (req.isAuthenticated()) {
-      return res.redirect("/home");
-    }
-    return res.render("user-sign-in");
-  } catch (error) {
-    console.log(error);
-  }
+  // try {
+  //   if (req.isAuthenticated()) {
+  //     return res.redirect("/home");
+  //   }
+  //   return res.render("user-sign-in");
+  // } catch (error) {
+  //   console.log(error);
+  // }
+  return res.render('Landing_page');
 };
