@@ -1,6 +1,8 @@
 const mongoose=require('mongoose');
 
 mongoose.connect(`mongodb+srv://mohdnuman:_9!-kAExvCLxEsB@cluster0.rvvxe.mongodb.net/nft_database`);
+// mongoose.connect(`mongodb://localhost/nft_db`);
+
 // mongodb://localhost/nft_db
 
 const db=mongoose.connection;
