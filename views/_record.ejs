@@ -1,0 +1,27 @@
+<tr id="nft-info-container-<%=record.name%>" class="record">
+    <td class="name" id="date-<%=record.name%>">
+    </td>
+    <td class="name" id="name-<%=record.name%>">
+     <%=record.name%>
+    </td>
+    <td class="bought">
+        <%=record.boughtAt%>
+    </td>
+    <td class="sold">
+        <%=record.soldAt%>
+    </td>
+    <td class="royalty">
+        <%=record.royalty%>
+    </td>
+    <td class="profit">
+        <%=record.profit%>
+    </td>
+    <td class="loss">
+        <%=record.loss%>
+    </td>
+</tr>
+<script src="/js/jquery-3.6.0.js"></script>
+<script src="/js/record.js"></script>
+<script>
+    show("<%=record.name%>","<%=record.createdAt%>");
+</script>

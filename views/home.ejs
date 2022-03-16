@@ -1,6 +1,43 @@
+<link rel="stylesheet" href="/css/home.css">
+
 <div>
-    <p>
-        <%=user.email%>
-        <%-include('./record-table.ejs') %>
-    </p>
+ 
+    <%-include('./navbar.ejs') %> 
+    <div class="records-container">
+  
+    <table>
+      <thead>
+        <tr>
+          <th class="date">Date</th>
+          <th class="name">Name</th>
+          <th class="bought">Bought At</th>
+          <th class="sold">Sold At</th>
+          <th class="royalty">Royalty</th>
+          <th class="profit">Profit</th>
+          <th class="loss">Loss</th>
+          <th class="floor">Current Floor Price</th>
+
+        </tr>
+      </thead>
+      <tbody>
+    <%for(record of user.records){%>
+        <%-include('./_record.ejs') %> 
+    <%}%>
+      </tbody>
+  </table>
+  </div>
+    <button class="add-record-button" id="add-record-button">ADD RECORD</button>
+<div class="add-record" id="add-record">
+  <%-include('./create-record.ejs') %> 
+
 </div>
+</div>
+<script>
+  $('#add-record-button').click(function(){
+    $('#add-record').toggleClass('visible');
+  })
+  $('.close-button').click(function(){
+    $('#add-record').toggleClass('visible');
+  })
+  
+</script>

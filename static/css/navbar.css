@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+body{
+    margin: 0px;
+}
+.nav{
+    position: sticky;
+    top: 0px;
+    height: 7vh;
+    background-color: black;
+    color:whitesmoke;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'League Gothic', sans-serif;
+}
+.logo{
+    font-family: 'League Gothic', sans-serif;
+    
+}
+form{
+    display: inline-block;
+}
+.right-nav{
+    float: right;
+}
+.logout{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: 2px solid green;
+    font-family: 'League Gothic', sans-serif;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.logout:hover{
+    cursor: pointer;
+}

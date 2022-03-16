@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+.table-heading {
+  word-spacing: 10vw;
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.8rem;
+}
+.records-container {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+.add-record-button {
+  margin: 10px;
+  background-color: white;
+  border: 2px solid black;
+  font-family: "League Gothic", sans-serif;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.add-record-button:hover {
+  cursor: pointer;
+}
+.record {
+  border-top: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  text-align: center;
+}
+th.name,
+th.bought,
+th.sold,
+th.royalty,
+th.profit,
+th.loss,
+th.floor {
+  width: 12%;
+}
+
+th {
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.5rem;
+}
+.add-record {
+  visibility: hidden;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 10vh;
+  padding: 30px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.visible {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+h1{
+    font-family: "League Gothic", sans-serif;
+    margin: 0px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+input{
+    /* margin-left: 5px; */
+    margin-right: 10px;
+}
+.close-button{
+    /* position: absolute; */
+    /* right: 10px; */
+    float: right;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding-right:2px ;
+    padding-left: 2px;
+    border: 1px solid black;
+}
+.close-button:hover{
+    cursor: pointer;
+}
