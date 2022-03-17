@@ -1,19 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 
+body{
+  background-color: #000;
+}
+
 .table-heading {
   word-spacing: 10vw;
   font-family: "League Gothic", sans-serif;
   font-size: 1.8rem;
 }
 .records-container {
-  border: 2px solid black;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-radius: 10px;
   padding: 5px;
   margin: 10px;
+
+}
+table{
+  color: white;
+  border: 2px solid white;
+}
+table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 1px 0;
 }
 .add-record-button {
   margin: 10px;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid green;
   font-family: "League Gothic", sans-serif;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -42,7 +60,8 @@ th.floor {
 
 th {
   font-family: "League Gothic", sans-serif;
-  font-size: 1.5rem;
+  /* letter-spacing: 1.4px; */
+  font-size: 1.7rem;
 }
 .add-record {
   visibility: hidden;
@@ -86,4 +105,29 @@ input{
 }
 .close-button:hover{
     cursor: pointer;
+}
+.sold-input{
+  background-color: white;
+  border: green solid;
+  border-radius: 5px;margin-top: 5px;
+  padding: 2px;
+}
+.submit-sold{
+  background-color: white;
+  border:2px green solid;
+  border-radius: 5px;
+}
+.submit-sold:hover{
+  cursor: pointer;
+}
+/* h1{
+  color: white;
+  margin-left: 15px;
+  font-size: 3rem;
+} */
+.green{
+  color: greenyellow;
+}
+.red{
+  color: red;
 }

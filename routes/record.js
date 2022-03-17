@@ -6,8 +6,10 @@ const recordController = require("../controllers/record_controller.js");
 // router.use("/user", require("./user.js"));
 // router.use("/record", require("./record.js"));
 
-router.get("/",recordController.home);
+// router.get("/",recordController.home);
 router.post("/create", recordController.create);
+router.post("/addsold", recordController.addSold);
+
 
 
 module.exports = router;

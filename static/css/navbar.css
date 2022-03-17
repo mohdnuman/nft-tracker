@@ -11,6 +11,7 @@ body{
     padding: 10px;
     font-size: 2rem;
     font-family: 'League Gothic', sans-serif;
+    border-bottom: 2px solid white;
 }
 .logo{
     font-family: 'League Gothic', sans-serif;

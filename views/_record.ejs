@@ -1,15 +1,26 @@
-<tr id="nft-info-container-<%=record.name%>" class="record">
-    <td class="name" id="date-<%=record.name%>">
+<tr id="nft-info-container-<%=record._id%>" class="record">
+    <td class="name" id="date-<%=record._id%>">
     </td>
-    <td class="name" id="name-<%=record.name%>">
+    <td class="name" id="name-<%=record._id%>">
      <%=record.name%>
     </td>
     <td class="bought">
         <%=record.boughtAt%>
     </td>
+    <%if(record.soldAt!==null){%>
     <td class="sold">
         <%=record.soldAt%>
     </td>
+    <%}else{%>
+        <td class="sold">
+            <form action="/record/addsold" method="POST">
+            <input placeholder="Sold At" style="width: 5vw;" name="soldAt" class="sold-input" required/>
+            <input name="recordId" value="<%=record._id%>" hidden/>
+            <input  type="submit" value="submit" class="submit-sold"/>
+        
+        </form>
+        </td>
+        <%}%>    
     <td class="royalty">
         <%=record.royalty%>
     </td>
@@ -19,10 +30,14 @@
     <td class="loss">
         <%=record.loss%>
     </td>
+    <td id="currentfp-<%=record._id%>">
+    </td>
+    <td id="currentpl-<%=record._id%>">
+    </td>
 </tr>
 <script src="/js/record.js"></script>
 <script src="/js/jquery-3.6.0.js"></script>
 
 <script>
-    show("<%=record.name%>","<%=record.createdAt%>");
+    show("<%=record.name%>","<%=record.createdAt%>","<%=record._id%>","<%=record.boughtAt%>","<%=record.royalty%>");
 </script>
