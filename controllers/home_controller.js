@@ -28,5 +28,13 @@ module.exports.red = async function (req, res) {
   // } catch (error) {
   //   console.log(error);
   // }
-  return res.render('Landing_page');
+  // return res.render('Landing_page');
+  try {
+    if (req.isAuthenticated()) {
+      return res.redirect("/home");
+    }
+    return res.render("Landing_page");
+  } catch (error) {
+    console.log(error);
+  }
 };
