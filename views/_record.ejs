@@ -4,6 +4,9 @@
     <td class="name" id="name-<%=record._id%>">
      <%=record.name%>
     </td>
+    <td class="quantity">
+        <%=record.quantity%>
+       </td>
     <td class="bought">
         <%=record.boughtAt%>
     </td>
@@ -39,5 +42,5 @@
 <script src="/js/jquery-3.6.0.js"></script>
 
 <script>
-    show("<%=record.name%>","<%=record.createdAt%>","<%=record._id%>","<%=record.boughtAt%>","<%=record.royalty%>");
+    show("<%=record.name%>","<%=record.createdAt%>","<%=record._id%>","<%=record.boughtAt%>","<%=record.royalty%>","<%=record.quantity%>");
 </script>

@@ -48,14 +48,20 @@ table {
   border: 1px solid #000;
   text-align: center;
 }
+
+th.sold
+ {
+  width: 14%;
+}
+th.date,
+th.quantity,
 th.name,
 th.bought,
-th.sold,
 th.royalty,
 th.profit,
 th.loss,
-th.floor {
-  width: 12%;
+th.floor{
+  width:8%
 }
 
 th {

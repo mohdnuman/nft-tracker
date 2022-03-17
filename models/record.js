@@ -22,6 +22,10 @@ const recordSchema=new mongoose.Schema({
     },
     loss:{
         type:Number
+    },
+    quantity:{
+        type:Number,
+        required:true
     }
 },{
     timestamps:true
